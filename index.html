@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang=""en>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Morayo Kolawole">
+        <meta name="description" content="This is a developer survey form inspired by GeeksforGeeks">
+        
+        <link rel="icon" type="image/x-icon" href="img/icons8-weightlifting-96.png">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Personal Training Consultation Questionnaire</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Personal Training Consultation Questionnaire
+            </h1>
+            <hr>
+
+        </header>
+        <article id="personal-details">
+            <h3>Full Name</h3>
+
+            <form action="" method="get">
+                <div class="container">
+                    <p class="flex input">
+                        <input type="text" name="firstName" id="firstName">
+                        <label for="name" id="firstName" class="identifierLabel">First Name</label>
+                    </p>
+                    <p >
+                        <input type="text" name="lastName" id="lastName">
+                        <label for="name" id="lastName" class="identifierLabel text">Last Name</label>
+                    </p>
+            </div>
+
+                <br>
+
+                <section class="radio gender">
+                    <h3>Gender</h3>
+                    <p>
+                        <input type="radio" name="maleFemale">
+                        <label for="maleFemale" class="identifierLabel radio">Male</label>
+                        <input type="radio" name="maleFemale">
+                        <label for="maleFemale" class="identifierLabel">Female</label>
+                    </p>
+                </section>
+
+                <!-- Date of Birth -->
+                <section id="date-of-birth">
+                    <h3>Date of Birth</h3>
+                        <!-- <select name="months" id="months" class="identifierLabel select">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>    
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <label for="months" id="months" class="identifierLabel month">Month</label> -->
+
+                        <!-- Months of the Year -->
+                    <input type="text" name="month" id="month" list="month-of-the-year">
+                    <datalist name="months" id="month-of-the-year" class="identifierLabel select">
+                        <option value="January"></option>
+                        <option value="February"></option>
+                        <option value="March"></option>    
+                        <option value="April"></option>
+                        <option value="May"></option>
+                        <option value="June"></option>
+                        <option value="July"></option>
+                        <option value="August"></option>
+                        <option value="September"></option>
+                        <option value="October"></option>
+                        <option value="November"></option>
+                        <option value="December"></option>
+                    </datalist>
+                    <label for="months" id="months" class="identifierLabel month">Month</label>
+                        
+                    
+                        <!-- <select name="days" id="days" class="identifierLabel days">
+                            <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                                
+                            </select> -->
+                            
+                            <!-- Days of the Week -->
+                    <input type="text" name="days" id="days" list="days-of-the-week">
+                        <datalist id="days-of-the-week">
+                            <option value="Monday"></option>
+                            <option value="Tuesday"></option>
+                            <option value="Wednesday"></option>
+                            <option value="Thursday"></option>
+                            <option value="Friday"></option>
+                            <option value="Saturday"></option>
+                            <option value="Sunday"></option>
+                                
+                        </datalist>
+                    <label for="days" class="identifierLabel days">Day</label>
+
+                    <input type="number" name="year" id="year" min="1920" max="2025" list="year-to-2025"> 
+                    <label for="number" id="year" class="identifierLabel year">Year</label> 
+                </section>
+
+                    <!-- Age and Height -->
+                    <section id="age-height">
+                        <h3>Age</h3>
+                        <input type="number" name="age" id="age">
+                        <label for="age" id="age" class="identifierLabel age">years</label>
+                    
+                        <h3>Height</h3>
+                        <input type="number" name="height" id="number">
+                        <label for="height" id="height" class="identifierLabel height">cm</label>
+                    </section>
+
+                    <section id="weight-job">
+                        <h3>Weight</h3>
+                        <input type="number" name="weight" id="weight">
+                        <label for="weight" id="weight" class="identifierLabel weight">KG</label>
+
+                    
+                        <h3>What do you do for a living?</h3>
+                        <input type="number" name="height" id="number">
+                        <label for="height" id="height" class="identifierLabel height">cm</label>
+                    </section>
+
+                    <!-- Level of Activity -->
+
+                    <section class="checkboxes activity-level">
+
+                        <h3>What is the activity level at your job?</h3>
+
+                        <p>
+                            <input type="checkbox" name="activity-level" id="activity-level">
+                            <label for="activity-level" id="activity-level">none(seated only)</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="activity-level" id="activity-level">
+                            <label for="activity-level" id="activity-level">Moderate (light activity such as walking)</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="activity-level" id="activity-level">
+                            <label for="activity-level" id="activity-level">High(heavy labor, very active)</label>
+                        </p>
+                    </section>
+
+                    <!-- Schedule -->
+                    <section class="schedule single">
+                        <h3>Do you follow a regular working schedule, do you work days, afternoon or nights?</h3>
+                        <input type="text" name="schedule" id="schedule">
+                    </section>
+
+
+                    <!-- Travelling -->
+                    <section class="checkboxes travel">
+
+                        <h3>How often do you travel?</h3>
+
+                        <p>
+                            <input type="checkbox" name="travel" id="travel-level">
+                            <label for="travel" id="travel-level">Rarely</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="travel" id="travel-level">
+                            <label for="travel" id="travel-level">A few times a year</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="travel" id="travel-level">
+                            <label for="travel" id="travel-level">A few times a month</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="travel" id="travel-level">
+                            <label for="travel" id="travel-level">Weekly</label>
+                        </p>
+                    </section>
+
+
+                    <section class="activities single">
+                        <h3>Please list the physical activities that you participate in outside of the gym and outside of work</h3>
+                        <input type="text" name="schedule" id="schedule">
+                    </section>
+                    
+                    
+                    <section class="health single">
+                        <h3>If you have any diagnosed health problems list the condition(s).</h3>
+                        <input type="text" name="health" id="health">
+                    </section>
+                    
+                    
+                    <section class="medication single">
+                        <h3>If you are on medications, please list them.</h3>
+                        <input type="text" name="medication" id="medication">
+                    </section>
+                
+                    
+                    <section class="therapy single">
+                        <h3>What additional therapies are being undertaken for the given health problem(s)?</h3>
+                        <input type="text" name="therapy" id="therapy">
+                    </section>
+
+                    <section class="radio motivational">
+                        <h3>Are you experiencing any stresses or motivational problems?</h3>
+                        <p>
+                            <input type="radio" name="motivation">
+                            <label for="motivatiobnal" class="identifierLabel radio">Yes</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="motivation">
+                            <label for="motivational" class="identifierLabel">No</label>
+                        </p>
+                    </section>
+                    
+                    
+                    <section class="radio heart-disease">
+                        <h3>Has anyone of your immediate family developed heart disease before the age of 60?</h3>
+                        <p>
+                            <input type="radio" name="heart-disease">
+                            <label for="heart-disease" class="identifierLabel radio">Yes</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="heart-disease">
+                            <label for="heart-disease" class="identifierLabel radio">No</label>
+                        </p>
+                    </section>
+
+                    
+                    <section class="radio family-disease">
+                        <h3>Do any diseases run in your family?</h3>
+                        <p>
+                            <input type="radio" name="disease">
+                            <label for="family-disease" class="identifierLabel radio">Yes</label>
+                        </p>
+    
+                        <p>
+                            <input type="radio" name="family-disease">
+                            <label for="family-disease" class="identifierLabel radio">No</label>
+                        </p>
+                    </section>
+                    
+                    
+                    <section class="radio asthma">
+                        <h3>Do you suffer from diabetes, asthma, high or low blood pressure?</h3>
+                        <p>
+                            <input type="radio" name="asthma">
+                            <label for="asthma" class="identifierLabel radio">Yes</label>
+                        </p>
+    
+                        <p>
+                            <input type="radio" name="asthma">
+                            <label for="asthma" class="identifierLabel radio">No</label>
+                        </p>
+                    </section>
+                    
+                    <section class="radio smoker">
+                        <h3>Are you a current cigarette smoker?</h3>
+                        <p>
+                            <input type="radio" name="smoker">
+                            <label for="smoker" class="identifierLabel radio">Yes</label>
+                        </p>
+    
+                        <p>
+                            <input type="radio" name="smoker">
+                            <label for="smoker" class="identifierLabel radio">No</label>
+                        </p>
+                    </section>
+
+                    <!-- Diet -->
+
+                    <section class="checkboxes diet">
+                        <h3>Your current diet could be best characterized as:</h3>
+
+                        <p>
+                            <input type="checkbox" name="diet" id="low-fat">
+                            <label for="diet">low-fat</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="diet" id="low-carb">
+                            <label for="diet">low-carb</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="diet" id="high-protein">
+                            <label for="diet">high-protein</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="diet" id="vegan">
+                            <label for="diet">Vegetarian/Vegan</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="diet" id="no-special">
+                            <label for="diet">No special diet</label>
+                        </p>
+
+                    </section>
+
+                    <!-- Readiness for Change -->
+                    <section class="radio change-readiness">
+                        <h3>Please rate your readiness for change.</h3>
+
+                        <p>
+                            <input type="radio" name="change" id="1">
+                            <label for="change" id="1">1</label>
+                            <input type="radio" name="change" id="2">
+                            <label for="change" id="2">2</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="change" id="3">
+                            <label for="change" id="3">3</label>
+                            <input type="radio" name="change" id="4">
+                            <label for="change" id="4">4</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" name="change" id="5">
+                            <label for="change" id="5">5</label>
+                            <input type="radio" name="change" id="6">
+                            <label for="change" id="6">6</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" name="change" id="7">
+                            <label for="change" id="7">7</label>
+                            <input type="radio" name="change" id="8">
+                            <label for="change" id="8">8</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" name="change" id="9">
+                            <label for="change" id="9">9</label>
+                            <input type="radio" name="change" id="10">
+                            <label for="change" id="10">10</label>
+                        </p>
+
+                    </section>
+
+
+                    <!-- Goals -->
+                    <section class="checkboxes goals">
+                        <h3>WHat following goals does best fit in with your goals?</h3>
+
+                        <p>
+                            <input type="checkbox" name="goals" id="health">
+                            <label for="goals" name="goals">Improved health</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="goals" id="endurance">
+                            <label for="goals" name="endurance">Improved endurance</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="goals" id="strength">
+                            <label for="goals" name="strength">Increased strength</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="goals" id="muscle-mass">
+                            <label for="goals" name="muscle-mass">Increased muscle mass</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="goals" id="fat-loss">
+                            <label for="goals" name="fat-loss">Fat loss</label>
+                        </p>
+
+                    </section>
+
+                    <section class="training single">
+                        
+                        <h3>What is your goal with your training?</h3>
+                        <input type="text" name="training" id="training">
+
+                        <h3>Why</h3>
+                        <input type="text" name="reason" id="reason">
+                    </section>
+                    <br>
+                    <section class="table">
+
+                        <table>
+                            <caption id="table-caption">Timeline for achieving your goal.</caption>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>8 WKS</th>
+                                    <th>16 WKS</th>
+                                    <th>24 WKS</th>
+                                    <th>32 WKS</th>
+                                    <th>40 WKS</th>
+                                    <th>1 YEAR</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th>NOW</th>
+                                    <td>
+                                        <input type="radio" name="8-WKS" id="8-WKS">
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="16-WKS" id="16-WKS">
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="24-WKS" id="24-WKS">
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="32-WKS" id="32-WKS">
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="40-WKS" id="40-WKS">
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="1-year" id="1-year">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="train single" >
+                        <h3>How often are you willing to train a week to reach your goal?</h3>
+                        <input type="text" name="training" id="training">
+                    </section>
+
+                    <!-- Readiness to Reach your Goal -->
+                    <section class="radio goal-readiness">
+                        <h3>Please rate your motivational level to do what it takes to reach your goal.</h3>
+
+                        <p>
+                            <input type="radio" name="change" id="1">
+                            <label for="change" id="1">1</label>
+                            <input type="radio" name="change" id="2">
+                            <label for="change" id="2">2</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="change" id="3">
+                            <label for="change" id="3">3</label>
+                            <input type="radio" name="change" id="4">
+                            <label for="change" id="4">4</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" name="change" id="5">
+                            <label for="change" id="5">5</label>
+                            <input type="radio" name="change" id="6">
+                            <label for="change" id="6">6</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" name="change" id="7">
+                            <label for="change" id="7">7</label>
+                            <input type="radio" name="change" id="8">
+                            <label for="change" id="8">8</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" name="change" id="9">
+                            <label for="change" id="9">9</label>
+                            <input type="radio" name="change" id="10">
+                            <label for="change" id="10">10</label>
+                        </p>
+
+                    </section>
+
+
+
+
+
+
+
+
+                </form>
+        </article>
+    </body>
+</html>
